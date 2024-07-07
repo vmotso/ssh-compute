@@ -194,9 +194,9 @@ export async function run(): Promise<void> {
     }
 
     const toolCommand = getToolCommand();
-    const options = { silent: true, ignoreReturnCode: true };
+    const options = { ignoreReturnCode: true };
     const commandString = `${toolCommand} ${cmd.join(' ')}`;
-    logInfo(`Running: ${commandString}`);
+    logInfo(`Running2: ${commandString}`);
 
     const output = await getExecOutput(toolCommand, cmd, options);
 
